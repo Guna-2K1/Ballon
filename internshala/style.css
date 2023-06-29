@@ -1,0 +1,116 @@
+body{
+	background-color: #f3d8e0;
+  background-image: url('Symbol 3 copy.png');
+}
+
+.container{
+  position: relative;
+  top: 50vh;
+}
+
+.stick1{
+	background : #0c607e;
+	position : absolute ;
+	left : 217pt;
+	width : 65pt;
+	height : 10pt;
+	border-radius: 3px;
+	animation: stick 4s infinite;
+}
+
+.stick2{
+	background : #503631;
+	position : absolute ;
+	left : 245pt;
+	width : 10pt;
+	height : 90pt;
+	animation: stick 4s infinite ;
+}
+
+.box{
+	border-radius: 7px;
+	background : #1aa44d;
+	position : absolute ;
+	left : 200pt;
+	top : 90pt;
+	width : 100pt;
+	height : 100pt;
+	
+}
+
+
+.stamp-balloon{
+	position: absolute;
+	left : 230pt;
+	top : 100pt;
+	width:63px; 
+  height:90px;
+  background-color:#d29a95;
+  border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+	transform: rotate(190deg);
+}
+
+.stamp-triangle{
+	width: 0; 
+  height: 0;
+	position: absolute;
+	left : 240pt;
+	top : 163pt;
+  border-bottom: 12px solid #d29a95; 
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent; 
+	transform: rotate(13deg);
+}
+
+.hose{
+	position : absolute ;
+	left : 380px;
+	top : 120px;
+	width : 200px;
+	height : 100px;
+	
+   border: solid 5px #d52424;
+  border-color: transparent transparent #000 transparent;
+  border-radius: 0 0 240px 50%/60px;
+}
+
+.baloon{
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40% ;
+	background : #cf113a;
+	position : absolute ;
+	left : 570px;
+	top : 158pt;
+	width : 3px;
+	height : 3px;
+	animation: baloon 4s infinite;
+}
+
+.ground{
+	background-color: gray;
+	opacity: 0.3;
+	position : absolute ;
+	left : 200px;
+	top : 170pt;
+	width:600px;
+	height: 50px;
+	border-radius: 100%;
+}
+
+@keyframes stick{
+	0%{top:0px;}
+	12.5%{top:100px;}
+	25%{top:0px;}
+	37.5%{top:100px;}
+	50%{top:0px;}
+	62.5%{top:100px;}
+	87.5%{top:0px;}
+	100%{top:0px;}
+}
+
+@keyframes baloon{
+	0%{width:3px; height: 3px; top:158pt; transform: rotate(-95deg);}
+	25%{width:140px; height: 200px; top:70pt; left: 595px;transform: rotate(-95deg);}
+	50%{width:210px; height: 300px; top:-35pt; left: 565px;transform: rotate(-140deg);}
+	75%{width:280px; height: 400px; top:-120pt; left: 520px;transform: rotate(-150deg);}
+	100%{width:280px; height: 400px; top:-800pt; left: 570px;transform: rotate(-200deg);}
+}
